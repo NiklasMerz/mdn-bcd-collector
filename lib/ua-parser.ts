@@ -83,6 +83,9 @@ const parseUA = (userAgent: string, browsers: Browsers): ParsedUserAgent => {
     case "node":
       data.browser.id = "nodejs";
       break;
+    case "webkit":
+      data.browser.id = "wkwebview_ios";
+      break;
   }
 
   const os = data.os.name.toLowerCase();
